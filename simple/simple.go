@@ -33,18 +33,27 @@ func Simple() error {
 
 		scanner := bufio.NewScanner(f)
 		scanner.Split(bufio.ScanWords)
-
+		var fileCounter int
 		for scanner.Scan() {
 			if strings.ToLower(scanner.Text()) == "the" {
 				COUNTER++
+				fileCounter++
 			}
 		}
 
 		if err := scanner.Err(); err != nil {
 			fmt.Println(err)
 		}
+		fmt.Println("FileCounter", fileCounter)
 	}
 
 	fmt.Println("Total", COUNTER)
+
 	return nil
 }
+
+/*
+Run mode is simple.
+Total 666876
+2023/09/07 01:05:01 simple mode took 917.042371ms
+*/
