@@ -53,7 +53,12 @@ func Simple() error {
 }
 
 /*
-Run mode is simple.
+FileCounter 181272
+FileCounter 28416
+FileCounter 106600
+FileCounter 151088
+FileCounter 199500
 Total 666876
-2023/09/07 01:05:01 simple mode took 917.042371ms
+2023/09/18 13:08:40 simple mode took 7.767177292s
+
 */
